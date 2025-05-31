@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karakter Favorit Chloe</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    nav {
+      background: linear-gradient(-45deg, #e0e0e0, #f0f0f0, #dcdcdc, #f5f5f5);
+      background-size: 400% 400%;
+      animation: gradientAnimation 12s ease infinite;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.75;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      position: relative;
+    }
+
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1, h2 {
+      color: #555;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      margin: 20px 0;
+    }
+
+    ul {
+      text-align: left;
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop class="video-background">
+    <source src="CENTRAL CEE - MET GALA VLOG - Central Cee (720p, h264).mp4" type="video/mp4">
+  </video>
+
+  <nav>
+    <a href="index.html">Profil Saya</a>
+    <a href="karakter.html">Karakter Favorit</a>
+  </nav>
+
+  <div class="container">
+    <h1>Karakter Favorit Saya</h1>
+
+    <img src="ccee.jpg" alt="Karakter Favorit" class="profile-photo" />
+
+    <h2>Ini Central Cee</h2>
+    <p><strong>Central Cee</strong> adalah penyanyi no.1 di hatiku ❤️</p>
+
+    <p>Saya menyukai Ccee karena <strong>lagunya yang sangat enak didengarkan dan dia ganteng.</strong></p>
+
+    <h2>Biografi Singkat:</h2>
+    <ul>
+      <li>Nama lengkap: Oakley Neil Caesar-Su</li>
+      <li>Asal: London</li>
+      <li>Tanggal lahir: 4 Juni 1998</li>
+      <li>Profesi / peran: Penyanyi</li>
+      <li>Fakta menarik: Dia seorang pencuri… karena selalu mencuri hatiku 🖤</li>
+    </ul>
+  </div>
+</body>
+</html>
